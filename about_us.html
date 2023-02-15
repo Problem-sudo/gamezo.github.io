@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about_us.css">    
+</head>
+<!-- <body style="background-color: black; margin: 0 0 0 0;" onload="javaslide();" > -->
+    <body style="background-color: wheat">
+    
+    <header>
+        <div class="nav">
+            <ol>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="about_us.html">ABOUT</a></li>
+                <li><a href="#">YOUR GAMES</a></li>
+                <li> <button class="btn3" onclick="window.location.replace('img.html','_self')">SIGN OUT</button></li>
+            <!-- <li><button class="btn2" style="float: right;"onclick=handleOnSignInClick()>LOGIN</button></li> -->
+            </ol> 
+
+<br><br><br><br>
+        <center><h2>Ola! Visitors</h2></center>
+   <center><p>Due to this pandemic Situation we created this website.<b>
+        So everyone can release their stress by playing game.
+        <br>This idea is not new but we will insure you that we will update our services frequently<br>
+        and Always comes with some new things
+    </b></p></center> <br><br><br><br><br><br><br>
+    <h3>For any help contact us!</h3>
+    <p><b>Mob.no-</b>+911118923889</p><br>
+    <p><b>Mob.no-</b>+912344828383</p>
+    <p><b>Email:-</b>problem@gmail.com</p>
+            <br>
+            
+    <!--Log in modal form-->
+
+    <div id="log" class="modal">
+
+        <form onsubmit="checkdetail()" class="content" name='content' id="content"> 
+
+            <div class="avatar">
+                
+            <span class="close" title="close" onclick="document.getElementById('log').style.display='none';">&times;</span>
+                <img src="user.jpg" alt="no-image" class="user">
+                </div>
+                <b>
+                <div class="container">
+            <label><span>Username</span><br>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+            </label>
+            <br><br>
+            <label>
+                <span>Password</span><br>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                <br><br>
+                </label>
+                <button style="background-color: darkturquoise;"  type="submit" name="login" id="login" >Login</button><br><br>
+                <label>
+                    <input type="checkbox" checked="checked" name="check" id="check"><span>Remember me</span>
+                </label>
+    </div>
+</b>
+    <div class="container">
+        <button type="button" onclick="document.getElementById('log').style.display='none'" class="cancelbtn">Cancel</button>
+  <span class="psw"><a href="#">Forgot password?</a></span><br><br>
+  <button style="background-color: blueviolet;" type="button" onclick="document.location='L_form.html'">Create Account</button>
+    </div></b></form></div>
+    </body>
+    
+</html>

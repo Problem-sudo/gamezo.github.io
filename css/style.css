@@ -1,0 +1,148 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: century gothic ;
+}
+body
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../wallpapertip_top-wallpaper-4k_409060.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ol{  float: right;
+    list-style-type: none ;
+    margin-top: 25px;
+
+
+}
+li
+{
+    display: inline-block;
+}
+
+ol li a{
+
+    text-decoration: none;
+    color: white;
+    padding:  5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ol li a:hover{
+    background-color:white;
+    color:aliceblue;
+
+}
+ol li .active a{
+    background-color:white;
+    color:aliceblue;
+}
+.title{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+      color: white;
+      font-size: 70px;
+
+}
+.button{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.btn{
+    border: 1px solid white;
+    padding :10px 30px;
+    color:white;
+    text-decoration: none;
+    transition: 00.6s ease;
+
+}
+.btn:hover{
+    background-color:white;
+    color:aliceblue;
+  }
+
+  section
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../earth-356059.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.title2{
+    position: absolute;
+    top:150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title2 h1{
+    color: white;
+    font-size: 70px;
+
+}
+.title3 h1{
+    color: white;
+    font-size: 70px;
+
+}
+.button2{
+    position: absolute;
+    top:160%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+}
+img{
+    width: 100%;
+}
+img :hover{
+    transform: scale(2,2);
+    transition: .3s ease;
+}
+
+legend
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../milky_way_starry_sky_stars_128523_3840x2160.jpg);
+    height: 100vh;
+    padding-top: 200PX;
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+
+  ul li a{
+
+    text-decoration: none;
+    color: white;
+    padding:  5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+.endbutton1 :hover{
+    background-color:white;
+    color:aliceblue;
+  }
+  .endbutton2 :hover{
+    background-color:white;
+    color:aliceblue;
+  }
+  .endbutton3 :hover{
+    background-color:white;
+    color:aliceblue;
+  }
+  .note
+  {
+      margin-left: 80px;
+      margin-right: 80px;
+      font-style: oblique;
+  }

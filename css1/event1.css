@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic ;
+}
+.nav
+{
+  
+   list-style-type: none;
+   margin-right: 16px;
+   font-size: 20px;
+  
+   
+}
+ol{  float: right;
+   list-style-type: none ;
+   margin-top: 20px;
+   color: white;
+
+}
+li
+{
+   display: inline-block;
+}
+
+ol li a{
+
+   text-decoration: none;
+   color: white;
+   padding:  5px 20px;
+   border: 1px solid transparent;
+   transition: 0.6s ease;
+}
+ol li a:hover{
+   background-color:white;
+   color:white;
+
+}
+ol li .active a{
+   background-color:white;
+   color:aliceblue;
+}
+
+header
+{
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.nc
+{  
+   padding-left: 20px;
+   padding-right: 20px;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   text-transform: uppercase;
+   line-height: 42px;
+   position: relative;
+   background-color: red;
+   font-family: cursive;
+
+   
+}
+.btn1{
+   position: absolute;
+   left: 50%;
+   margin-top: -50px;
+   transform: translate(-50%,-50%);
+   text-decoration: none;
+} 
+
+.btn1{
+   border: 1px solid;
+   padding :10px 30px;
+   color: black;
+   text-decoration: none;
+   transition: 00.6s ease;
+
+}
+.btn1:hover{
+   color: #292929;
+   border: 1px black;
+   transition: .5s;
+ }
+
+ .font li
+ {
+    list-style: none;
+    margin: 10px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 500px;
+   
+ }
+ .font :hover
+ {
+    color: #292929;
+    border: 1px black;
+    transition: .5s;
+ }
+ .fdata
+ {  margin-top: 100px;
+   text-align: center;
+   font-size: small;
+   font-family: cursive ;
+ }
+ .btn2
+ {
+   position: absolute;
+   left: 50%;
+   margin-top: -50px;
+   transform: translate(-50%,-50%);
+   text-decoration: none;
+ }
+
+ .btn2{
+   border: 1px solid;
+   padding :10px 30px;
+   color: white;
+   text-decoration: none;
+   transition: 00.6s ease;
+   float: right;
+   list-style-type: none ;
+   margin-top: 25px;
+
+}
+.btn2:hover{
+   color: #292929;
+   border: 1px white;
+   transition: .5s;
+ }
+
+   .slide{
+      width: 100%;
+      height: 650px;
+      
+  }
+  .head{
+      background-color: rgb(12, 6, 29);
+      height:35px;
+      word-spacing: 20px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-top: 3px;        
+  }
+  .data{
+      text-align: center;
+      font-size: large;
+  }
+  .title{
+      font-size:xx-large;
+      color:rgb(207, 41, 69)}
+      input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(248, 222, 222);
+  box-sizing: border-box;
+  }
+  button{ 
+      
+   color: white;
+   font-size: larger;
+          border: none;
+          cursor: pointer;
+      background-color: inherit;
+      margin-top: 4px;
+  }
+  button:hover{
+      background-color: white;
+      color:rgb(248, 244, 244);
+  }
+  .cancelbtn
+  {
+      width: auto;
+      padding:10px 18px;
+      background-color: brown;
+      border-radius: 20px;
+      border: 3px;
+        align-items: center;
+  }
+
+  .avatar{
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+      
+  }
+  .user{width: 40%;
+      border-radius: 45%;
+  }
+  span.psw{float: right;}
+  .container{
+      padding:16px;
+    
+  }
+  
+  .modal{
+  display:none;
+  position:fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto ; /* Enable scroll if needed */
+  /* background-color; */
+  padding-top: 60px;
+  font-size: 20px; 
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;       
+  }
+  form
+  {
+     color: wheat;
+  }
+  .content
+  {
+  background-color:black;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 70%; 
+  }
+  .close
+  {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-weight: bold;
+  }
+  .close:hover{
+  color: pink;
+  cursor: pointer;
+  }
+
+  a:hover {text-decoration:none;}
+ 
+.ph1
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 75px;
+}
+.ph1:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph2
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph2:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph3
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph3:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph4
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph4:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph5
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph5:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph6
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph6:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph7
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph7:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph8
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph8:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph9
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph9:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph10
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph10:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph11
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph11:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph12
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph12:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph13
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph13:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph14
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph14:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph15
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph15:hover{
+    transform: scale(1.5); 
+}
+ 
+.ph16
+{
+    height:200px;
+    width: 250px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    transition: transform .2s; 
+    margin-left: 30px;
+}
+.ph16:hover{
+    transform: scale(1.5); 
+}
+
+.btn3
+{
+    text-decoration: none;
+    color: white;
+    padding:  5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 20px;
+
+}
+.btn3:hover
+{   color: white;
+    border: 1px white;
+    transition: .5s;
+
+}
+

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css1/event.css">
+   <script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous">
+
+    </script>
+    <script>
+        var intervalID;
+        var modal=document.getElementById('log');
+      window.onclick=function(Event)
+      {
+          if(event.target==log)
+          {
+              modal.style.display="none";
+              
+          }
+             
+       }
+        var Index = 0;
+        function javaslide() {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          Index++;
+          if (Index > x.length) {Index = 1}
+          x[Index-1].style.display="block";
+    
+          intervalID = setTimeout(javaslide, 2000);
+        }
+      
+    
+       function handleOnSignInClick(){
+            document.getElementById('log').style.display='block';
+            clearTimeout(intervalID);
+       }
+    
+       function handleOnClose(){
+            document.getElementById('log').style.display='none';
+            intervalID = setTimeout(javaslide, 3000);
+       }
+       function checkdetail()
+       {
+           var username=localStorage.getItem("username");
+           var password=localStorage.getItem("password");
+         if((document.content.uname.value===username)&&(document.content.password.value===password))
+                window.open("Event.html");
+        else
+        alert("Wrong Input");
+       }
+
+
+       
+       </script>
+       <script>
+           
+       function changebg()
+       {
+           const images=[
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp2548263-4k-video-game-wallpapers.jpg")',
+              ' url("wp2724236-epic-gamer-wallpaper.jpg")',
+              ' url("wp4705314-action-game-wallpapers.jpg")',
+              ' url("wp4983330-video-games-4k-desktop-wallpapers.jpg")',
+              ' url("wp5037746-4k-gaming-wallpapers.jpg")',
+              ' url("wp5132018-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wp5132020-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp5231505-4k-gaming-wallpaperss.jpg")',
+              ' url("wp5231514-4k-gaming-wallpapers.jpg")',
+              ' url("wp5231517-4k-gaming-wallpapers.jpg")',
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp2548263-4k-video-game-wallpapers.jpg")',
+              ' url("wp2724236-epic-gamer-wallpaper.jpg")',
+              ' url("wp4705314-action-game-wallpapers.jpg")',
+              ' url("wp4983330-video-games-4k-desktop-wallpapers.jpg")',
+              ' url("wp5037746-4k-gaming-wallpapers.jpg")',
+              ' url("wp5132018-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wp5132020-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp5231505-4k-gaming-wallpaperss.jpg")',
+              ' url("wp5231514-4k-gaming-wallpapers.jpg")',
+              ' url("wp5231517-4k-gaming-wallpapers.jpg")',
+              ' url("wp4705314-action-game-wallpapers.jpg")',
+              ' url("wp4983330-video-games-4k-desktop-wallpapers.jpg")',
+              ' url("wp5037746-4k-gaming-wallpapers.jpg")',
+              ' url("wp5132018-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wp5132020-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp5231505-4k-gaming-wallpaperss.jpg")',
+              ' url("wp5231514-4k-gaming-wallpapers.jpg")',
+              ' url("wp5231517-4k-gaming-wallpapers.jpg")',
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp2548263-4k-video-game-wallpapers.jpg")',
+              ' url("wp2724236-epic-gamer-wallpaper.jpg")',
+              ' url("wp4705314-action-game-wallpapers.jpg")',
+              ' url("wp4983330-video-games-4k-desktop-wallpapers.jpg")',
+              ' url("wp5037746-4k-gaming-wallpapers.jpg")',
+              ' url("wp5132018-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wp5132020-gaming-desktop-4k-wallpapers.jpg")',
+              ' url("wallpapertip_top-wallpaper-4k_409060.jpg")',
+              ' url("wp5231505-4k-gaming-wallpaperss.jpg")',
+              ' url("wp5231514-4k-gaming-wallpapers.jpg")',
+              ' url("wp5231517-4k-gaming-wallpapers.jpg")'
+           ]
+           const section=  document.querySelector('section')
+           const bg=images[Math.floor(Math.random()*images.length)] ;
+           section.style.backgroundImage=bg;
+       }
+       setInterval(changebg,3000);
+
+       </script>
+
+    
+</head>
+<!-- <body style="background-color: black; margin: 0 0 0 0;" onload="javaslide();" > -->
+    <body>
+     
+ 
+    
+    <header>
+        <div class="nav">
+            <ol>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="about_us.html">ABOUT</a></li>
+                <li>  <button class="btn3" onclick=handleOnSignInClick()>YOUR GAMES</button></li>
+                <li>  <button class="btn3" onclick=handleOnSignInClick()>SIGN IN</button></li>
+            <!-- <li><button class="btn2" style="float: right;"onclick=handleOnSignInClick()>LOGIN</button></li> -->
+            </ol> 
+            <div>
+
+                <div class="button2">
+                    <a href="#" class="btn11">PLAY FREE GAMES </a>
+    
+                </div>
+            
+           
+
+    </header>
+
+   
+  <section class="sec1">
+     <br><br>
+  </section>
+
+
+  <section class="sec2">
+      <br><br>
+  <h1> <center><p style="color: wheat; font-family: cursive;">THE BEST WAY TO PLAY: JOIN US and PLAY!</p></center></h1><br><hr>
+</section>
+
+<section class="sec3">
+   
+</section>
+
+<section class="sec4">
+   
+</section>
+
+<section class="sec5">
+    <p class="data">
+        <br>   <br>   <br>  <br>  <br>  
+        Play the very best of soccer, football, ice hockey, golf, basketball, Formula 1® and MMA games  sports titles. Dominate the World's Game in our FIFA games, rise to gridiron greatness in the Madden NFL series, hit the ice with hockey gameplay so authentic you might want to bring a mouth guard with our NHL games, and more!
+
+     </p>
+
+</section>
+<section class="sec6">
+ <span class="head"><h1 style="font-family: cursive;">New Arivals</h1></span>
+    <hr><br><br>
+</section>
+<section class="sec7">
+    
+  
+    <a href="https://www.travian.com/international" target="_blank">
+        <img src="g1.jpg" class="ph1" alt="travia"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.the-west.net/" target="_blank">
+        <img src="g2.jpg" class="ph2" alt="the west"  width="250" height="200" border="5" ></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.minecraft.net/en-us/download/server" target="_blank">
+        <img src="g3.jpg" class="ph3" alt="mincraft" width="250" height="200" border="5" ></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+        <a href="https://www.deadfrontier.com/" target="_blank">
+        <img src="PUBG-mobile-1.jpg" class="ph4" alt="dead fountier" width="250" height="200" border="5"></a>
+       
+        <a style="margin-left: 40px;"   href="https://www.aq.com/" target="_blank">
+        <img src="Call of Duty Mobile.jpg" class="ph5" alt="adventures world" width="250" height="200" border="5" ></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://squadd.io/" target="_blank">
+        <img src="g6.jpg" class="ph6"  alt="squadd" width="250" height="200" border="5"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br>
+        <a href="https://cs-online.club/en/fast_game" target="_blank">
+        <img src="capsule_616x353.jpg" class="ph7" alt="counter strike" width="250" height="200" border="5"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://amongusplay.online/" target="_blank">
+        <img src="social-thumbnail-en-ab9301da-1607527951-1610974965.jpg" class="ph8"  alt="amoung us" width="250" height="200" border="5" ></a>
+ 
+        <a style="margin-left: 40px;" href="https://bethesda.net/en/game/doom" target="_blank">
+        <img src="g9.jpg" class="ph9" alt="Doom" width="250" height="200" border="5"></a>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+   
+</section>
+    <footer>
+   <a href="https://www.google.com/"> <div  class="btn1">Read more</div></a>
+   <div class="fdata"> <br><br>
+   <p><i>Hello Visitors</i></p>
+   <p>We have created a website only for gaming purpose.<br>
+        Here everyone can play the game they want without any hesitation. <br>
+       This website experience will make you come many times.<br>
+       We have many online games which you can play.Winners will always get rewards.<u>If you need any help Contact us</u>  </p><br> <br><br>
+      
+        <label for="suggestions">Give us your suggestions</label><br>
+        <textarea name="suggestions" id="" cols="30" rows="2"></textarea><br>
+         <button type="submit" style="color: black;">Submit</button>
+       
+    </div>
+   <div class="font">
+       <ul class="font">
+           <li><i class="fa fa-github" aria-hidden="true"></i>
+           </li>
+           <li><i class="fa fa-facebook-official" aria-hidden="true"></i>
+           </li>
+           <li><i class="fa fa-instagram" aria-hidden="true"></i>
+           </li>
+           
+       </ul>
+       
+   </div>
+  
+  
+    </footer>
+
+    <div id="log" class="modal">
+
+        <form onsubmit=checkdetail() class="content" name='content' id="content"> 
+
+            <div class="avatar">
+                
+            <span class="close" title="close" onclick=handleOnClose()>&times;</span>
+                <img src="5dca87b6088664ae9fa8080986a58b4c.png" alt="no-image" class="user">
+                </div>
+                <b>
+                <div class="container">
+            <label><span>Username</span><br>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+            </label>
+            <br><br>
+            <label>
+                <span>Password</span><br>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                <br><br>
+                </label>
+                <button style="background-color: rgb(3, 0, 209); border-radius: 20px; padding: 8px;"  type="submit" name="login" id="login" >Login</button><br><br>
+                <label>
+                    <input type="checkbox" checked="checked" name="check" id="check"><span>Remember me</span>
+                </label>
+    </div>
+</b>
+    <div class="container">
+        <button  style="background-color: red; border-radius: 20px; padding: 8px; margin-left: 180px;" type="button" onclick="document.getElementById('log').style.display='none'" class="cancelbtn">Cancel</button>
+  <span class="psw"><a href="#">Forgot password?</a></span><br><br>
+  <button style="background-color: rgb(62, 221, 89); border-radius: 20px; padding: 8px;" type="button" onclick="document.location='L_form.html'">Create Account</button>
+    </div></b></form></div>
+
+
+
+   
+</body>
+</html>
